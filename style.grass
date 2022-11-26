@@ -1,101 +1,113 @@
 node {
-    diameter: 56px;
     border-width: 0;
     font-size: 11px;
-    caption: "{NodeText}";
+    caption: "{ContainedText}";
+    diameter: 66px;
 }
 
-node.BLOCK {
-    color: #000
+node.Block {
+    color: #222222
 }
-
 
 
 relationship.CHILD {
+    color: #222;
     caption: "{EdgeIndex}"
 }
 
-node.DOCUMENT {
-    color: #1B5E20;
+relationship.VALUE {
+    color: #EF9F9F;
+    text-color-internal: #222;
+    caption: ""
+}
+
+relationship.MERGED_CELL {
+    color: #406882;
+    text-color-internal: #FEFBF3;
+
+}
+
+node.Document {
+    color:#967E76;
     text-color-internal: #EEEEEE;
     caption: "{Id}"
 }
 
-node.PAGE {
-    color: #F9A825;
+node.Page {
+    color: #D7C0AE;
     text-color-internal: #212121;
     caption: "{Page}"
 }
 
 
-node.LINE {
-    color: #37474F;
-    text-color-internal: #EEEEEE;
+node.Line {
+    color: #222222;
+    text-color-internal: #FEFBF3;
     caption: "{Text}"
 }
 
-node.WORD {
-    color: #FAFAFA;
-    border-color: #37474F;
+node.Word {
+    color: #FEFBF3;
+    border-color: #222222;
     border-width: 2px;
+    text-color-internal: #222222;
+    caption: "{Text}";
+
+}
+
+node.Word.Printed {
+    color: #FAFAFA;
+    border-color: #222;
+    border-width:1.5px;
+    text-color-internal: #222222;
+    caption: "{Text}";
+}
+
+node.Word.Handwritten {
+    color: #FAFAFA;
+    border-color: #de9e6c;
+    border-width: 1px;
     text-color-internal: #212121;
     caption: "{Text}";
-    diameter: 62px;
-
 }
 
-node.PRINTED {
-    color: #FAFAFA;
-    border-color: #37474F;
-    border-width:2px;
-    text-color-internal: #263238;
-    caption: "{Text}";
-    diameter: 62px;
+node.Table {
+    color: #1f4765;
+    text-color-internal: #FEFBF3;
 }
 
-node.HANDWRITING {
-    color: #FAFAFA;
-    border-color: #ff7043;
+node.Cell {
+    color: #B1D0E0;
+    caption: "{ContainedText}";
+    text-color-internal: #212121;
+}
+
+node.ColumnHeader {
+    color: #B1D0E0;
+    border-color: #6998AB;
     border-width: 2px;
-    text-color-internal: #212121;
-    caption: "{Text}";
-    diameter: 62px;
-}
-
-node.TABLE {
-    color: #0D47A1;
-}
-
-node.CELL {
-    color: #81D4FA;
-    caption: "{NodeText}";
-    text-color-internal: #212121;
-}
-
-node.COLUMN_HEADER {
-    color: #81D4FA;
-    border-color: #0D47A1;
-    border-width: 2px;
-    caption: "{NodeText}";
+    caption: "{ContainedText}";
     text-color-internal: #212121;
 }
 
 
-node.MERGED_CELL {
-    color: #03A9F4;
-
+node.MergedCell {
+    color: #406882;
+    text-color-internal: #FEFBF3;
+    border-color: #B1D0E0;
 }
 
-node.KV {
-    color: #F44336
+
+node.Key {
+    color: #FAD4D4;
+    border-color: #EF9F9F;
+    text-color-internal: #212121;
+    caption: "{ContainedText}"
 }
 
-node.KEY {
-    color: #EF9A9A;
-    caption: "{NodeText}"
-}
-
-node.VALUE {
-    color: #B71C1C;
-    caption: "{NodeText}"
+node.Value {
+    color: #EF9F9F;
+    text-color-internal: #222222;
+    border-color: #FAD4D4;
+    caption: "{ContainedText}"
 }
